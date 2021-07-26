@@ -6,6 +6,7 @@ gemspec
 
 group :development do
   gem 'pg'
+  gem 'puma'
 end
 
 # To use a debugger

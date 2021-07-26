@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  postgres:
+    image: "postgres:12"
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5432:5432"
+
+  web:
+    depends_on:
+      - "postgres"
+    build: .
+    command: bash -c "(bundle check || bundle install) && bundle exec rails s -b 0.0.0.0"
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/aact_form_engine
+      - gems:/gems
+
+volumes:
+  postgres:
+  gems:
