@@ -1,0 +1,9 @@
+/.bundle/
+/doc/
+/log/*.log
+/pkg/
+/tmp/
+/damy_app/log/*.log
+/damy_app/storage/
+/damy_app/tmp/
+.byebug_history
