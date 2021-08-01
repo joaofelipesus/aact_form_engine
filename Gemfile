@@ -10,9 +10,6 @@ group :development do
 end
 
 group :development, :test do
-  gem 'factory_bot_rails'
   gem 'byebug'
+  gem 'factory_bot_rails'
 end
-
-# To use a debugger
-# gem 'byebug', group: [:development, :test]
