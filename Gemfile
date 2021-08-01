@@ -7,6 +7,7 @@ gemspec
 group :development do
   gem 'pg'
   gem 'puma'
+  gem 'rails-erd'
 end
 
 group :development, :test do
