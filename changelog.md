@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.1.2] development
+## [0.1.2] 01/08/2021
 - fix migrations to use uuid
 - add model participant
 - add model form_kind
