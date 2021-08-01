@@ -7,7 +7,7 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.lis
 
 # Instala nossas dependencias
 RUN apt-get update && apt-get install -qq -y --no-install-recommends \
-nodejs yarn build-essential libpq-dev imagemagick git-all nano
+nodejs yarn build-essential libpq-dev imagemagick git-all nano graphviz
 
 # ENV CHROMIUM_DRIVER_VERSION 2.46
 

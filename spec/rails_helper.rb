@@ -9,7 +9,6 @@ require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 # require 'factory_bot_rails'
 require 'database_cleaner/active_record'
-require './spec/factories/participants'
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -30,6 +29,7 @@ Dir[Rails.root.join('../spec', 'support', '**', '*.rb')].sort.each { |f| require
 # If you are not using ActiveRecord, you can remove these lines.
 
 begin
+  ActiveRecord::Migrator.migrations_paths = 'spec/dummy_app/db/migrate'
   ActiveRecord::Migration.maintain_test_schema!
 rescue ActiveRecord::PendingMigrationError => e
   puts e.to_s.strip
