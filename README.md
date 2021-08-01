@@ -1,8 +1,8 @@
 # AactFormEngine
-Short description and motivation.
+A rails plugin used to generate default base to a simple form based app.
 
 ## Usage
-How to use my plugin.
+ - Before configure the engine you need to **generate devise User model**, because Participant has a dependancy to it.
 
 ## Installation
 Add this line to your application's Gemfile:

@@ -8,14 +8,14 @@ default: &default
 
 development:
   <<: *default
-  database: damy_app_development
+  database: dummy_app_development
 
 test:
   <<: *default
-  database: damy_app_test
+  database: dummy_app_test
 
 production:
   <<: *default
-  database: damy_app_production
-  username: damy_app
-  password: <%= ENV['DAMY_APP_DATABASE_PASSWORD'] %>
+  database: dummy_app_production
+  username: dummy_app
+  password: <%= ENV['DUMMY_APP_DATABASE_PASSWORD'] %>

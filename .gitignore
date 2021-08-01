@@ -3,7 +3,7 @@
 /log/*.log
 /pkg/
 /tmp/
-/damy_app/log/*.log
-/damy_app/storage/
-/damy_app/tmp/
+/dummy_app/log/*.log
+/dummy_app/storage/
+/dummy_app/tmp/
 .byebug_history

@@ -9,5 +9,12 @@ group :development do
   gem 'puma'
 end
 
-# To use a debugger
-# gem 'byebug', group: [:development, :test]
+group :development, :test do
+  gem 'byebug'
+  gem 'factory_bot_rails'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 5.0'
+  gem 'database_cleaner-active_record'
+end
