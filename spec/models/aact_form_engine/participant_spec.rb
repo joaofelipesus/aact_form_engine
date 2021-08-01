@@ -2,8 +2,8 @@ require 'rails_helper'
 
 module AactFormEngine
   RSpec.describe Participant, type: :model do
-    xit 'first' do
-      byebug
+    it 'first' do
+      create(:participant)
     end
 
     it { should belong_to(:user) }
