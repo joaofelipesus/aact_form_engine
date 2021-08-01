@@ -13,3 +13,7 @@ group :development, :test do
   gem 'byebug'
   gem 'factory_bot_rails'
 end
+
+group :test do
+  gem 'shoulda-matchers', '~> 5.0'
+end

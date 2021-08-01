@@ -148,6 +148,8 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.10.2)
+    shoulda-matchers (5.0.0)
+      activesupport (>= 5.2.0)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -174,6 +176,7 @@ DEPENDENCIES
   pg
   puma
   rspec-rails
+  shoulda-matchers (~> 5.0)
 
 BUNDLED WITH
    2.2.15
