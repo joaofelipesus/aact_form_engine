@@ -20,7 +20,7 @@ require "sprockets/railtie"
 Bundler.require(*Rails.groups)
 require "aact_form_engine"
 
-module DamyApp
+module DummyApp
   class Application < Rails::Application
     config.load_defaults Rails::VERSION::STRING.to_f
 
