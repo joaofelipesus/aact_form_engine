@@ -7,3 +7,4 @@
 /dummy_app/storage/
 /dummy_app/tmp/
 .byebug_history
+coverage
