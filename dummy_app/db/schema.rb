@@ -25,24 +25,9 @@ ActiveRecord::Schema.define(version: 2021_08_01_202327) do
   end
 
   create_table "aact_form_engine_participants", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
-    t.uuid "aact_form_engine_user_id", null: false
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["aact_form_engine_user_id"], name: "index_aact_form_engine_participants_on_aact_form_engine_user_id"
   end
 
-  create_table "aact_form_engine_users", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
-    t.string "email", default: "", null: false
-    t.string "encrypted_password", default: "", null: false
-    t.string "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["email"], name: "index_aact_form_engine_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_aact_form_engine_users_on_reset_password_token", unique: true
-  end
-
-  add_foreign_key "aact_form_engine_participants", "aact_form_engine_users"
 end
