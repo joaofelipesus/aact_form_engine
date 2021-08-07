@@ -12,8 +12,8 @@ end
 
 group :development, :test do
   gem 'byebug'
-  gem 'factory_bot_rails'
   gem 'devise'
+  gem 'factory_bot_rails'
 end
 
 group :test do
