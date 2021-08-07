@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     aact_form_engine (0.1.2)
+      devise
       rails (~> 6.1.4)
 
 GEM
@@ -204,7 +205,6 @@ DEPENDENCIES
   aact_form_engine!
   byebug
   database_cleaner-active_record
-  devise
   factory_bot_rails
   pg
   puma
